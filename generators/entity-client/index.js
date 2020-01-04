@@ -1,3 +1,17 @@
+const CONSTANTS = require('./constants/constants');
+const DEMO_CONSTANTS = require('./constants/demo-constants');
+
+const chalk = require('chalk');
+const packagejs = require('../../package.json');
+const semver = require('semver');
+const shelljs = require('shelljs');
+const fs = require('fs');
+const BaseGenerator = require('generator-jhipster/generators/generator-base');
+const jhipsterConstants = require('generator-jhipster/generators/generator-constants');
+
+const CLIENT_MAIN_SRC_DIR = jhipsterConstants.CLIENT_MAIN_SRC_DIR;
+const CLIENT_TEST_SRC_DIR = jhipsterConstants.CLIENT_TEST_SRC_DIR;
+
 /* eslint-disable consistent-return */
 const chalk = require('chalk');
 const EntityClientGenerator = require('generator-jhipster/generators/entity-client');
